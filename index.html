@@ -8,6 +8,11 @@
     </head>
     <body>
         <nav class="navbar">
+            <button class="menu-toggle" aria-label="Abrir menú">
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+                <span class="hamburger"></span>
+            </button>
             <ul class="nav-links">
                 <li><a href="#">Acerca de mi</a></li>
                 <li><a href="#">Proyectos</a></li>
@@ -18,5 +23,64 @@
                 <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
+        <div class="imagen-nombre">
+            <img src="./assets/img/cosmos.webp" alt="cosmos">
+            <h2 class="imagen-nombre-texto">Alan Isidro Garcia</h2>
+        </div>
+        <section class="acerca-de-mi">
+            <h3>Acerca de mi</h3>
+            <p>ola</p>
+        </section>
+        <section class="proyectos">
+            <h3>Proyectos</h3>
+            <section>
+                <!-- va una imagen -->
+                <h4>RoomForyou</h4>
+                <p></p>
+                <h4>Tecnologias</h4>
+                <p></p>
+            </section>
+            <section>
+                <!-- va una imagen -->
+                <h4>Conexion remota a AWS y Azure</h4>
+                <p></p>
+                <h4>Tecnologias</h4>
+                <p></p>
+            </section>
+            <section>
+                <!-- va una imagen -->
+                <h4>U-cafe</h4>
+                <p></p>
+                <h4>Tecnologias</h4>
+                <p></p>
+            </section>
+        </section>
+        <section class="cursos">   
+            <h3>Cursos y certificaciones</h3>
+            <p></p>
+        </section>
+        <section class="experiencia">
+            <h3>Experiencia laboral</h3>
+            <p></p>
+        </section>
+        <section class="estudios">
+            <h3>Estudios</h3>
+            <p></p>
+        </section>
+        <section class="tecnologias">
+            <h3>Tecnologias</h3>
+            <!-- van imnagenes e hipervinculos -->
+        </section>
+        <footer class="contacto">
+            <h3>Contacto</h3>
+        </footer>
+        <script>
+            const menuToggle = document.querySelector('.menu-toggle');
+            const navLinks = document.querySelector('.nav-links');
+    
+            menuToggle.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+            });
+        </script>   
     </body>
 </html>
